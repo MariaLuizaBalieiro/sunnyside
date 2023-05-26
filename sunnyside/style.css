@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-font: 'Barlow', sans-serif;
+    --title-font: 'Fraunces', serif;
+    --red: #fe7867;
+    --yellow: #fad400;
+    --gray: #a7abae;
+    --white: #ffffff;
+    --graphic-text: #25564b;
+    --photography-text: #19536b;
+    --footer-bg: #458c7e;
+    --background-bg: #FFFBF8;
+}
+
+body{
+    font-family: var(--text-font);
+    background-color: var(--background-bg);
+}
+
+header{
+    height: 80vh;
+    background-image: url(./images/mobile/image-header.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: var(--white);
+    padding: 32px 16px;
+    display: grid;
+
+
+}
+ header nav{
+     display: flex;
+     justify-content: space-between;
+     color: var(--white);
+
+ }
+
+header .logo{
+    font-size: 1.5rem;  
+    font-weight: 700;
+
+}
+
+header h1{
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    place-self: center;
+    text-align: center;
+    letter-spacing: .5rem;
+}
+
+header .arrow-down{
+    place-self: center;
+    
+}
+
+.values img{
+    width: 100%;
+}
+
+.description{
+    display: grid;
+    padding-block: 64px;
+    place-items: center;
+    height: 500px;
+
+}
+
+.description__title{
+    font-family: var(--title-font);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    width: 300px;
+
+}
+
+.description__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray);
+    width: 370px;
+    text-align: center;
+    padding: 0px 16px;
+}
+
+.descpription__learn-more{
+    position: relative;
+    font-family: var(--title-font);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.line{
+    height: 8px;
+    width: 110%;
+    position: absolute;
+    border-radius: 4px;
+    left: -5%;
+    bottom: 1%;
+    z-index: -1;
+    opacity: 30%;
+}
+
+.line-yellow{
+    background-color:var(--yellow);
+}
+
+.line-red{
+   background-color: var(--red);
+} 
+
+.container{
+    background-color: tomato;
+    height: 600px;
+    background-size: cover;
+}
+
+.container.graphic{
+    background-image:url(./images/mobile/image-graphic-design.jpg)
+}
+
+.container.graphic div{
+    color: var(--graphic-text);
+}
+
+.container .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 24px;
+    height: 100%;
+}
+
+
+.conteiner .description__title{
+    font-size: 1.5rem;
+}
+
+
+.container .description__text{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.container.photography{
+    background-image: url();
+}
+
+.container.photography div{
+    color: var(--photography-text);
+}
+
+.testimonials{
+    text-align: center;
+}
+
+
+.testimonials-title{
+font-family: var(--text-font);
+font-size: 1.1rem;
+letter-spacing: .2rem;
+color: var(--gray);
+text-transform: uppercase;
+padding-top: 32px;
+}
+
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: 400px;
+}
+
+.client__avatar{
+    background-color: tomato;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-size: cover
+}
+
+.client__avatar.client1{
+    background-image: url(./images/image-emily.jpg)
+}
+.client__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    opacity: .6;
+    padding: 0px 16px;
+}
+
+.client__name{
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
